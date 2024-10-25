@@ -9,11 +9,11 @@ trigger:
 pool:
   name: default
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: echo Добре си НАСКО в Надежда 6!
+  displayName: 'Run SAMO BEROE SCRIPT'
 
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+    echo У У
+    echo Добре си
+  displayName: 'Run a BEROE SCRIPT'
