@@ -1,3 +1,6 @@
+variables:
+  System.Debug: true
+
 # Starter pipeline
 
 # Start with a minimal pipeline that you can customize to build and deploy your code.
