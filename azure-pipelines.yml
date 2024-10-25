@@ -1,4 +1,5 @@
 # Starter pipeline
+
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -9,11 +10,18 @@ trigger:
 pool:
   name: default
 steps:
-- script: echo Добре си НАСКО в Надежда 6!
-  displayName: 'Run SAMO BEROE SCRIPT'
+#- script: echo Добре си НАСКО в Надежда 6!
+ # displayName: 'Run SAMO BEROE SCRIPT'
 
 
-- script: |
-    echo У У
-    echo Добре си
-  displayName: 'Run a BEROE SCRIPT'
+#- script: |
+ #   echo У У
+ #   echo Добре си
+ # displayName: 'Run a BEROE SCRIPT'
+ 
+- task: FortifyScanCentralDAST@7
+  inputs:
+    scanCentralDastApiUrl: 'http://up636306-pc:8082/api'
+    scanCentralCiCdToken: '857fc5c9-97eb-4a29-a72a-622c67ad918a'
+    #sscCiToken: '$(ScanCentral.SscCiToken)'
+    sscCiToken: 'MjIzNjQ3ZWQtNWZiMy00NmI0LTk4YzgtZDQyZWNjYTJjMjU2'
