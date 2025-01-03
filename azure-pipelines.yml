@@ -1,5 +1,6 @@
 variables:
   System.Debug: true
+  NODE_TLS_REJECT_UNAUTHORIZED: '0' # Set it as a global variable for the job
 
 # Starter pipeline
 
